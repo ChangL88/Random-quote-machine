@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+import React from 'react';
+import Main from './redux/Main';
+import { Provider } from 'react-redux';
+import { configureStore } from '@reduxjs/toolkit'
+import {  Quotes, SelectQuote, RandomColor } from './redux/action';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+export const store = configureStore({
+    reducer: { Quotes, SelectQuote, RandomColor},
+  })
 
 function App() {
+    store.subscribe(()=> console.log(store.getState()))
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Provider store={store}>
+            <div className="App">
+                <Main />
+            </div>
+        </Provider>
     </div>
   );
 }
