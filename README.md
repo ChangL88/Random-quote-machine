@@ -2,6 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+This project is based on "Build a Random Quote Machine" assignment from www.freecodecamp.org - Front End Development Libraries.
+Complete link https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-random-quote-machine
+
+Project was built with React.js with react-redux
+
 ## Available Scripts
 
 In the project directory, you can run:
