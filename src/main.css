@@ -1,4 +1,8 @@
-#quote-box{
-    margin:auto;
+.quote-box-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 600px;
     width: 1200px;
 }

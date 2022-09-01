@@ -64,14 +64,18 @@ class Main extends Component {
 
     render(){
         return (
-            
-            <div id="quote-box" className="" style={{backgroundColor: this.props.color}}> 
-                <h3 id="text">{this.props.quote}</h3>
-                <p id="author">{this.props.author}</p>
-                <a id="tweet-quote" href="twitter.com/intent/tweet" className="btn btn-primary"><FontAwesomeIcon icon = { faTwitter }></FontAwesomeIcon></a>
-                <button id="new-quote" type="button" className="btn btn-primary" onClick={() => {this.props.randomizeColor(randomColor()); this.props.selectQuote(this.randomQuote());}}>New quote</button>
-                {/* <button id="new-quote" type="button" className="btn btn-primary" onClick={()=> randomQuote()}>New btn</button> */}
-            </div>
+            <>
+                <h1>Random Quote Generator</h1>
+                <div className="quote-box-wrapper">
+                    <div id="quote-box" className="" style={{backgroundColor: this.props.color}}> 
+                        <h3 id="text">{this.props.quote}</h3>
+                        <p id="author">{this.props.author}</p>
+                        <a id="tweet-quote" href="twitter.com/intent/tweet" className="btn btn-primary"><FontAwesomeIcon icon = { faTwitter }></FontAwesomeIcon></a>
+                        <button id="new-quote" type="button" className="btn btn-primary" onClick={() => {this.props.randomizeColor(randomColor()); this.props.selectQuote(this.randomQuote());}}>New quote</button>
+                        {/* <button id="new-quote" type="button" className="btn btn-primary" onClick={()=> randomQuote()}>New btn</button> */}
+                    </div>
+                </div>
+            </>
         );
     }
 }
