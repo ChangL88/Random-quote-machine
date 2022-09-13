@@ -6,3 +6,9 @@
     height: 600px;
     width: 1200px;
 }
+#quote-box {
+    padding: 6px;  
+}
+#new-quote {
+    margin: 12px;
+}

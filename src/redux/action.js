@@ -28,14 +28,6 @@ export const fetchQuotes = () => dispatch => {
     })
 }
 
-// export const fetchQuotes = () => {
-//     console.log('temp')
-// }
-
-// export const addQuotes = quotes => ({
-//     type: ADD_QUOTES,
-//     payload: quotes
-// })
 
 export const addQuotes = quotes => ({
     type: ADD_QUOTES,
@@ -56,7 +48,7 @@ export const Quotes = (state = {quotes: []}, action) => {
 export const selectQuote = quote => ({
     type: SELECT_QUOTE,
     payload: quote
-    })
+})
 
 export const randomizeColor = color => ({
     type: RANDOMCOLOR,
@@ -64,24 +56,24 @@ export const randomizeColor = color => ({
 })
 
 
-    // REDUCER
+    // REDUCERS
 
 export const SelectQuote = (state = { quote: {}}, action) => {
-        switch(action.type){
-            case SELECT_QUOTE:
-                return {...state, quote: action.payload}
-            default:
-                return state;
-        }
+    switch(action.type){
+        case SELECT_QUOTE:
+            return {...state, quote: action.payload}
+        default:
+            return state;
     }
+}
 
 
 
 export const RandomColor = (state = { color: '' }, action) => {
-        switch(action.type){
-            case RANDOMCOLOR:
-                return {...state, color: action.payload}
-            default:
-                return state;
-        }
+    switch(action.type){
+        case RANDOMCOLOR:
+            return {...state, color: action.payload}
+        default:
+            return state;
     }
+}

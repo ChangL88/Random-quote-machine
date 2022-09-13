@@ -11,7 +11,6 @@ export const store = configureStore({
   })
 
 function App() {
-    store.subscribe(()=> console.log(store.getState()))
   return (
     <div className="App">
       <Provider store={store}>
