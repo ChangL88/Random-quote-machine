@@ -58,7 +58,7 @@ class Main extends Component {
     render(){
         return (
             <>
-                <h1>Random Quote Generator</h1>
+                <a className='git' href="https://github.com/ChangL88/Random-quote-machine"><img className='git' src="/GitHub-Mark-32px.png" alt="github logo"/></a>
                 <div className="quote-box-wrapper">
                     <div id="quote-box" className="" style={{backgroundColor: this.props.color}}> 
                         <h3 id="text">{this.props.quote}</h3>

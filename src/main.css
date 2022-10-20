@@ -8,7 +8,9 @@
 }
 #quote-box {
     padding: 6px;  
+    transition-duration: 1s;
 }
 #new-quote {
     margin: 12px;
 }
+
